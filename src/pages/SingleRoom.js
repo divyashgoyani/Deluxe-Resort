@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import defaultBcg from "../images/room-1.jpeg";
-import Hero from "../components/Hero";
 import Banner from "../components/Banner";
 import { Link, useParams } from "react-router-dom";
 import { RoomContext } from "../context";
@@ -44,7 +43,7 @@ const SingleRoom = (routeProps) => {
       </StyledHero>
       <section className="single-room">
         <div className="single-room-images">
-          {defaultImg.map((item, index) => {
+          {images.map((item, index) => {
             return <img key={index} src={item} alt={name} />;
           })}
         </div>
