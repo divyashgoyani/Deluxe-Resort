@@ -114,13 +114,14 @@ h6 {
 }
 .nav-icon {
   font-size: 1.5rem;
-  color: var(--primaryColor);
+  color: #bdbdbd;
 }
 .nav-links {
   height: 0;
   overflow: hidden;
   transition: var(--mainTransition);
   list-style-type: none;
+  margin: auto;
 }
 .nav-links a {
   display: block;
@@ -135,7 +136,7 @@ h6 {
 }
 .nav-links a:hover {
   color: #b4b4b4;
-  margin-top: 3px;
+  letter-spacing: 5px;
 }
 
 .show-nav {
@@ -157,7 +158,6 @@ h6 {
   }
   .nav-links a {
     margin: 0 1rem;
-    /* padding: 0.5rem 0; */
   }
 }
 /* end of navbar */
