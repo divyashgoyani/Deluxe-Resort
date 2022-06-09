@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 :root {
-  --primaryColor: #af9a7d;
-  --mainWhite: #fff;
+  --primaryColor: #2c2c2c;
+  --mainWhite: rgb(255, 255, 255);
   --offWhite: #f7f7f7;
   --mainBlack: #222;
   --mainGrey: #ececec;
@@ -19,8 +21,8 @@
 body {
   padding-top: 66px;
   color: var(--mainBlack);
-  background: var(--mainWhite);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: #f1f4f5;
+  font-family: 'Montserrat', sans-serif;
   line-height: 1.4;
 }
 h1 {
@@ -57,17 +59,17 @@ h6 {
   display: inline-block;
   text-decoration: none;
   letter-spacing: var(--mainSpacing);
-  color: var(--mainBlack);
-  background: var(--primaryColor);
+  background: #bdbdbd;
+  color: var(--primaryColor);
   padding: 0.4rem 0.9rem;
-  border: 3px solid var(--primaryColor);
+  border: 3px solid #bdbdbd;
   transition: var(--mainTransition);
   text-transform: uppercase;
   cursor: pointer;
 }
 .btn-primary:hover {
   background: transparent;
-  color: var(--primaryColor);
+  color: #ffffff;
 }
 .loading {
   text-transform: capitalize;
@@ -94,7 +96,7 @@ h6 {
   left: 0;
   width: 100%;
   padding: 0.1rem 2rem;
-  background: var(--offWhite);
+  background: rgba(0, 0, 0, 0.85);
   z-index: 1;
 }
 .nav-header {
@@ -124,7 +126,7 @@ h6 {
   display: block;
   text-decoration: none;
   padding: 1rem 0;
-  color: var(--mainBlack);
+  color: #e9e9e9;
   transition: var(--mainTransition);
   text-align: center;
   font-size: 1rem;
@@ -132,7 +134,8 @@ h6 {
   letter-spacing: var(--mainSpacing);
 }
 .nav-links a:hover {
-  color: var(--primaryColor);
+  color: #b4b4b4;
+  margin-top: 3px;
 }
 
 .show-nav {
@@ -175,7 +178,7 @@ h6 {
 /* Banner */
 .banner {
   display: inline-block;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.8);
   color: var(--mainWhite);
   padding: 2rem 1rem;
   text-align: center;
@@ -188,7 +191,7 @@ h6 {
 .banner div {
   width: 10rem;
   height: 5px;
-  background: var(--primaryColor);
+  background: #bdbdbd;
   margin: 1.7rem auto;
 }
 .banner p {
@@ -287,6 +290,7 @@ h6 {
   grid-row-gap: 2rem;
   grid-column-gap: 40px;
 }
+
 @media screen and (min-width: 776px) {
   .featured-rooms-center {
     width: 90vw;
@@ -487,6 +491,7 @@ h6 {
   width: 100%;
   background: transparent;
   font-size: 1rem;
+  border-radius: 2rem;
 }
 .size-inputs {
   display: flex;
